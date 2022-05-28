@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
-const About = (props) => {
+function About(props) {
   return (
     <>
       <div className="about-container">
@@ -15,7 +15,7 @@ const About = (props) => {
             content="About - Creativice Mockup Website"
           />
         </Head>
-        <Header></Header>
+        <Header />
         <div className="about-main-container">
           <div className="about-who-we-are">
             <h1 className="about-heading">WHO WE ARE</h1>
@@ -30,159 +30,122 @@ const About = (props) => {
                 always evolving, always challenging and always seeking to
                 champion campaigns with you in excellence.
               </span>
-              <br></br>
-              <span></span>
             </span>
           </div>
           <div className="about-team">
-            <div className="about-container1">
+            <div className="about-heading">
               <h1>MEET THE TEAM</h1>
             </div>
-            <div className="about-team-grid-1">
-              <div className="about-testimonial-card">
-                <div className="about-testimonial">
-                  <span className="about-text04">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    lorem lorem, malesuada in metus vitae, scelerisque accumsan
-                    ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
-                    commodo nec.
-                  </span>
-                  <span className="about-text05">Jane Doe</span>
-                  <span className="about-text06">SOFTWARE ENGINEER</span>
-                  <img
-                    alt="profile"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image"
-                  />
-                </div>
-              </div>
-              <div className="about-testimonial-card1">
-                <div className="about-testimonial1">
-                  <span className="about-text07">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    lorem lorem, malesuada in metus vitae, scelerisque accumsan
-                    ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
-                    commodo nec.
-                  </span>
-                  <span className="about-text08">Jane Doe</span>
-                  <span className="about-text09">SOFTWARE ENGINEER</span>
-                  <img
-                    alt="profile"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image1"
-                  />
-                </div>
-              </div>
-            </div>
+
             <div className="about-team-grid-2">
               <div className="about-testimonial-card2">
                 <div className="about-testimonial2">
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
+                    className="about-image2"
+                  />
+                  <span className="about-text11">Jane Doe</span>
+                  <span className="about-text12">SOFTWARE ENGINEER</span>
                   <span className="about-text10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     lorem lorem, malesuada in metus vitae, scelerisque accumsan
                     ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
                     commodo nec.
                   </span>
-                  <span className="about-text11">Jane Doe</span>
-                  <span className="about-text12">SOFTWARE ENGINEER</span>
+                </div>
+              </div>
+              <div className="about-testimonial-card2">
+                <div className="about-testimonial2">
                   <img
                     alt="profile"
                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
                     className="about-image2"
                   />
-                </div>
-              </div>
-              <div className="about-testimonial-card3">
-                <div className="about-testimonial3">
-                  <span className="about-text13">
+                  <span className="about-text11">Jane Doe</span>
+                  <span className="about-text12">SOFTWARE ENGINEER</span>
+                  <span className="about-text10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     lorem lorem, malesuada in metus vitae, scelerisque accumsan
                     ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
                     commodo nec.
                   </span>
-                  <span className="about-text14">Jane Doe</span>
-                  <span className="about-text15">SOFTWARE ENGINEER</span>
+                </div>
+              </div>
+              <div className="about-testimonial-card2">
+                <div className="about-testimonial2">
                   <img
                     alt="profile"
                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image3"
+                    className="about-image2"
                   />
-                </div>
-              </div>
-              <div className="about-testimonial-card4">
-                <div className="about-testimonial4">
-                  <span className="about-text16">
+                  <span className="about-text11">Jane Doe</span>
+                  <span className="about-text12">SOFTWARE ENGINEER</span>
+                  <span className="about-text10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     lorem lorem, malesuada in metus vitae, scelerisque accumsan
                     ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
                     commodo nec.
                   </span>
-                  <span className="about-text17">Jane Doe</span>
-                  <span className="about-text18">SOFTWARE ENGINEER</span>
-                  <img
-                    alt="profile"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image4"
-                  />
                 </div>
               </div>
             </div>
-            <div className="about-team-grid-3">
-              <div className="about-testimonial-card5">
-                <div className="about-testimonial5">
-                  <span className="about-text19">
+            <div className="about-team-grid-2">
+              <div className="about-testimonial-card2">
+                <div className="about-testimonial2">
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
+                    className="about-image2"
+                  />
+                  <span className="about-text11">Jane Doe</span>
+                  <span className="about-text12">SOFTWARE ENGINEER</span>
+                  <span className="about-text10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     lorem lorem, malesuada in metus vitae, scelerisque accumsan
                     ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
                     commodo nec.
                   </span>
-                  <span className="about-text20">Jane Doe</span>
-                  <span className="about-text21">SOFTWARE ENGINEER</span>
-                  <img
-                    alt="profile"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image5"
-                  />
                 </div>
               </div>
-              <div className="about-testimonial-card6">
-                <div className="about-testimonial6">
-                  <span className="about-text22">
+              <div className="about-testimonial-card2">
+                <div className="about-testimonial2">
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
+                    className="about-image2"
+                  />
+                  <span className="about-text11">Jane Doe</span>
+                  <span className="about-text12">SOFTWARE ENGINEER</span>
+                  <span className="about-text10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     lorem lorem, malesuada in metus vitae, scelerisque accumsan
                     ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
                     commodo nec.
                   </span>
-                  <span className="about-text23">Jane Doe</span>
-                  <span className="about-text24">SOFTWARE ENGINEER</span>
-                  <img
-                    alt="profile"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image6"
-                  />
                 </div>
               </div>
-              <div className="about-testimonial-card7">
-                <div className="about-testimonial7">
-                  <span className="about-text25">
+              <div className="about-testimonial-card2">
+                <div className="about-testimonial2">
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
+                    className="about-image2"
+                  />
+                  <span className="about-text11">Jane Doe</span>
+                  <span className="about-text12">SOFTWARE ENGINEER</span>
+                  <span className="about-text10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     lorem lorem, malesuada in metus vitae, scelerisque accumsan
                     ipsum. Nam pellentesque nulla leo, sagittis vehicula sem
                     commodo nec.
                   </span>
-                  <span className="about-text26">Jane Doe</span>
-                  <span className="about-text27">SOFTWARE ENGINEER</span>
-                  <img
-                    alt="profile"
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=200"
-                    className="about-image7"
-                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Footer></Footer>
+        <Footer />
       </div>
       <style jsx>
         {`
@@ -215,6 +178,7 @@ const About = (props) => {
           }
           .about-heading {
             text-align: left;
+            padding-bottom: var(--dl-space-space-unit);
           }
           .about-text {
             font-size: 2rem;
@@ -351,7 +315,7 @@ const About = (props) => {
           .about-text10 {
             color: var(--dl-color-gray-500);
             text-align: center;
-            margin-bottom: 48px;
+            margin-top: 20px;
           }
           .about-text11 {
             font-size: 1.5rem;
